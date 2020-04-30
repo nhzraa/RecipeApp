@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Homefood</string>
+    <string name="homefood">HOMEFOOD</string>
+    <string name="desc">A Recipe App for All Ages</string>
+    <string name="btnEnter">ENTER SITE</string>
+    <string name="searchPG">Search For Recipes:</string>
+    <string name="btnSubmit">SUBMIT</string>
+    <string name="btnAllRecipes">All Recipes</string>
+    <string name="btnSearchIngre">Search Recipes</string>
+    <string name="welcome">Welcome to Homefood!</string>
+    <string name="clickSignUp">Does not have any account? Click HERE</string>
+</resources>

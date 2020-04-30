@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background3"
+    android:layout_height="match_parent"
+    tools:context=".SearchIngre">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="253dp"
+        android:layout_height="336dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/oval"
+        android:fontFamily="cursive"
+        android:text="@string/searchPG"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#7E3A01"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#DD7D47"
+        android:fontFamily="serif"
+        android:text="@string/btnSubmit"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.631" />
+
+    <EditText
+        android:id="@+id/ingre1"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Ingredient 1 (Required)"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+
+    <EditText
+        android:id="@+id/ingre2"
+        android:layout_width="190dp"
+        android:layout_height="49dp"
+        android:hint="Ingredient 2 (Optional)"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@id/ingre1"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@id/ingre3"></EditText>
+
+    <EditText
+        android:id="@+id/ingre3"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingredient 3 (Optional)"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@id/ingre2"
+        app:layout_constraintEnd_toEndOf="@id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@id/btnSubmit"></EditText>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

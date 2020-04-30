@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:manifest="http://schemas.android.com/apk/distribution"
+    package="com.project.homefoodlatest">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/homefood"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/homefood"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".EditProfile"
+            android:label="Edit Profile"
+            android:parentActivityName=".MainMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenu" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".SearchResult"
+            android:label="Search Result"
+            android:parentActivityName=".MainMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenu" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SearchIngre"
+            android:label="Search by Ingredients"
+            android:parentActivityName=".MainMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenu" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ROTD"
+            android:label="Recipe Recommendation"
+            android:parentActivityName=".MainMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenu" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AllRecipes"
+            android:label="All Recipes"
+            android:parentActivityName=".MainMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenu" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Launcher"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainMenu"
+            android:parentActivityName=".Login"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Login" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:label="Sign Up"
+            android:parentActivityName=".Login">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Login" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="Log In"
+            android:parentActivityName=".Launcher">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Launcher" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
